@@ -75,14 +75,18 @@ Prosta aplikacja desktopowa stworzona w JavaFX do zarządzania listą klientek, 
 
 ## Dane Logowania
 
-Aplikacja używa predefiniowanych danych logowania (hardcoded):
+Dane logowania są trzymane w pliku `users.properties` w formacie `login=hasło`. Plik ten może być łatwo edytowany bez ingerencji w kod źródłowy.
 
-| Login  | Hasło     | Dostęp do Rejestru |
-| :----- | :-------- | :---------------- |
-| `x`    | `x`       | Nie               |
-| `Ewa`  | `kot2312` | Nie               |
-| `Monika`| `banan112`| Nie               |
-| `Edyta`| `Ser2115`| **Tak** |
+**Użytkownik "Edyta" posiada dostęp do rejestru aktywności.**
+
+## Przechowywanie Danych
+
+| Plik                  | Opis                                                           |
+|-----------------------|----------------------------------------------------------------|
+| `clients.csv`         | Dane klientek (imię, numer, suma zakupów, rabaty itd.)        |
+| `activity_log.txt`    | Rejestr działań użytkownika (logowania, zakupy, rabaty)        |
+| `last_clean.txt`      | Data ostatniego wyczyszczenia pliku logu                      |
+| `users.properties`    | Lista loginów i haseł użytkowników                             |
 
 **Uwaga:** Jest to uproszczony mechanizm logowania na potrzeby demonstracyjne. W środowisku produkcyjnym należy zastosować bezpieczniejsze metody zarządzania użytkownikami i hasłami.
 
