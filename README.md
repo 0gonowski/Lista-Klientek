@@ -88,14 +88,6 @@ Dane logowania są trzymane w pliku `users.properties` w formacie `login=hasło`
 | `last_clean.txt`      | Data ostatniego wyczyszczenia pliku logu                      |
 | `users.properties`    | Lista loginów i haseł użytkowników                             |
 
-**Uwaga:** Jest to uproszczony mechanizm logowania na potrzeby demonstracyjne. W środowisku produkcyjnym należy zastosować bezpieczniejsze metody zarządzania użytkownikami i hasłami.
-
-## Przechowywanie Danych
-
-* **Dane Klientek:** Zapisywane są w pliku `clients.csv` w głównym katalogu aplikacji. Format CSV: `Imię,Telefon,ŁącznaKwota,OstatniZakup,OstatniPróg,LiczbaZakupów,AktualnaStawkaRabatu,PoprzedniFib,AktualnyFib,ZablokowanyCofanie`
-* **Log Aktywności:** Zapisywany w pliku `activity_log.txt`.
-* **Data Ostatniego Czyszczenia Logu:** Zapisywana w pliku `last_clean.txt`.
-
 ## Licencja
 
 Ten projekt jest udostępniany na licencji MIT - zobacz plik [LICENSE](LICENSE) (jeśli go dodasz) po szczegóły.
