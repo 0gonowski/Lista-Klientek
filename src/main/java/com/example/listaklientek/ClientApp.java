@@ -267,7 +267,8 @@ public class ClientApp extends Application {
                     return true;
                 }
                 String lowerCaseFilter = newValue.toLowerCase();
-                return client.getName().toLowerCase().contains(lowerCaseFilter);
+                return client.getName().toLowerCase().contains(lowerCaseFilter)||
+                        client.getPhoneNumber().toLowerCase().contains(lowerCaseFilter);
             });
         });
 
