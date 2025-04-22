@@ -1,0 +1,181 @@
+/* Globalne ustawienia */
+.root {
+    -fx-background-color: #1e1e1e;
+    -fx-text-fill: #ffffff;  /* Zmieniono kolor tekstu na biały */
+    -fx-font-size: 14px;  /* Trochę większy rozmiar czcionki niż oryginalny */
+}
+
+/* Tabela */
+.table-view {
+    -fx-background-color: #2d2d2d;
+    -fx-text-fill: #ffffff;  /* Zmieniono kolor tekstu na biały */
+    -fx-font-size: 15px;  /* Trochę większy rozmiar czcionki dla tabeli */
+}
+
+.table-row-cell {
+    -fx-background-color: #2d2d2d;
+    -fx-text-fill: #ffffff;  /* Zmieniono kolor tekstu na biały */
+    -fx-border-color: #555555; /* Obramowanie dla wiersza */
+    -fx-border-width: 1px;    /* Szerokość obramowania */
+    -fx-padding: 8px;  /* Zwiększenie odstępu wewnątrz komórek */
+    -fx-font-size: 15px;  /* Trochę większa czcionka dla wierszy tabeli */
+}
+
+.table-cell {
+    -fx-text-fill: #ffffff;  /* Zmieniono kolor tekstu na biały */
+    -fx-border-color: #444444;  /* Obramowanie komórek tabeli */
+    -fx-border-width: 1px;
+    -fx-padding: 8px; /* Dodano odstęp dla lepszej czytelności */
+    -fx-font-size: 15px;  /* Większa czcionka w komórkach */
+}
+
+/* Kolumny nagłówków */
+.table-view .column-header-background {
+    -fx-background-color: #3c3c3c;
+    -fx-text-fill: #ffffff;  /* Zmieniono kolor tekstu na biały */
+    -fx-font-size: 16px;  /* Większy rozmiar czcionki dla nagłówków */
+}
+
+.table-view .filler {
+    -fx-background-color: #2d2d2d;
+}
+
+/* Button */
+.button {
+    -fx-background-color: #3c3c3c;  /* Domyślne tło */
+    -fx-text-fill: #ffffff;
+    -fx-border-color: #555555;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-font-size: 14px; /* Większy rozmiar czcionki dla przycisków */
+    -fx-padding: 8px 12px; /* Większe przyciski, ale nie za duże */
+}
+
+/* Podświetlenie obramowania przycisku po najechaniu */
+.button:hover {
+    -fx-border-color: lightgreen;  /* Zmiana koloru obramowania po najechaniu */
+}
+
+/* Przywrócenie domyślnego tła po kliknięciu */
+.button:pressed {
+    -fx-background-color: #3c3c3c;  /* Przywrócenie domyślnego tła po kliknięciu */
+}
+
+/* TextField */
+.text-field {
+    -fx-background-color: #3c3c3c;
+    -fx-text-fill: #ffffff;
+    -fx-border-color: #555555;
+    -fx-font-size: 14px;  /* Trochę większy rozmiar czcionki w polach tekstowych */
+    -fx-padding: 8px; /* Zwiększenie odstępu */
+}
+
+/* Tooltip */
+.tooltip {
+    -fx-background-color: #3c3c3c;
+    -fx-text-fill: #ffffff;
+    -fx-border-color: #555555;
+    -fx-font-size: 14px;  /* Trochę większy rozmiar czcionki */
+}
+
+/* Scrollbar */
+.scroll-bar {
+    -fx-background-color: #3c3c3c;
+}
+
+.scroll-bar:vertical .increment-button, .scroll-bar:vertical .decrement-button,
+.scroll-bar:horizontal .increment-button, .scroll-bar:horizontal .decrement-button {
+    -fx-background-color: #555555;
+}
+
+/* Podświetlenie obramowania przycisku w fokusie */
+.button:focused {
+    -fx-border-color: lightgreen;
+}
+
+/* Dla okien dialogowych */
+.dialog-pane {
+    -fx-background-color: #2d2d2d;
+    -fx-text-fill: #ffffff;  /* Zmieniono kolor tekstu na biały */
+    -fx-border-color: #555555;
+    -fx-font-size: 14px;  /* Większy rozmiar czcionki w oknach dialogowych */
+}
+
+.dialog-pane .button {
+    -fx-background-color: #3c3c3c;
+    -fx-text-fill: #ffffff;
+    -fx-border-color: #555555;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-font-size: 14px;
+}
+
+.dialog-pane .button:hover {
+    -fx-border-color: lightgreen;  /* Kolor obramowania przycisku po najechaniu w dialogu */
+}
+
+.dialog-pane .button:pressed {
+    -fx-background-color: #3c3c3c;  /* Przywrócenie domyślnego koloru po kliknięciu */
+}
+
+.dialog-pane .content {
+    -fx-text-fill: #ffffff;  /* Zmieniono kolor tekstu na biały */
+    -fx-font-size: 14px;
+}
+
+/* Highlight dla klientek z rabatem */
+.table-row-cell.highlight-green {
+    -fx-background-color: lightgreen;
+}
+
+.table-row-cell.highlight-green .table-cell {
+    -fx-text-fill: black;
+}
+
+/* Styl dla etykiet (Label) */
+.label {
+    -fx-text-fill: #ffffff; /* Zmiana koloru tekstu na biały */
+    -fx-font-size: 14px; /* Dopasowanie rozmiaru czcionki */
+}
+
+/* Zmiana wyglądu nagłówków kolumn w tabeli */
+.table-view .column-header {
+    -fx-background-color: #333333; /* Ciemniejsze tło dla nagłówków */
+    -fx-text-fill: #ffffff;        /* Biały kolor tekstu */
+    -fx-font-weight: bold;         /* Pogrubienie tekstu */
+}
+
+.table-view .column-header-background {
+    -fx-background-color: #333333; /* Tło kolumn */
+}
+
+.table-view .table-header-row .label {
+    -fx-text-fill: #ffffff;        /* Kolor tekstu nagłówków */
+}
+
+/* Stylizacja dialogu, aby usunąć biały pasek */
+.dialog-pane {
+    -fx-background-color: #2b2b2b;  /* Ciemne tło dla całego okna dialogowego */
+}
+
+.header-panel {
+    -fx-background-color: transparent;  /* Usunięcie tła nagłówka */
+}
+
+.dialog-pane .header-panel .label {
+    -fx-text-fill: white;  /* Tekst nagłówka w kolorze białym, jeśli nagłówek jest używany */
+}
+
+.dialog-pane .content {
+    -fx-background-color: #2b2b2b;  /* Tło zawartości alertu */
+    -fx-text-fill: white;  /* Kolor tekstu w zawartości alertu */
+}
+
+.button-bar {
+    -fx-background-color: #2b2b2b;  /* Tło dla przycisków */
+}
+
+.button {
+    -fx-background-color: #444444;  /* Kolor tła przycisku */
+    -fx-text-fill: white;  /* Kolor tekstu na przycisku */
+}
