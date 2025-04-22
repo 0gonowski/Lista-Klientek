@@ -24,6 +24,7 @@ import java.time.format.DateTimeFormatter;
 import java.time.temporal.ChronoUnit;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Properties;
 
 public class ClientApp extends Application {
 
@@ -37,15 +38,28 @@ public class ClientApp extends Application {
 
     // Predefiniowane loginy i hasła
     private Map<String, String> validCredentials = new HashMap<>();
+    private void loadCredentialsFromFile() {
+        try (InputStream input = getClass().getResourceAsStream("/users.properties")) {
+            if (input == null) {
+                System.err.println("Nie znaleziono pliku users.properties");
+                return;
+            }
+            Properties prop = new Properties();
+            prop.load(input);
+
+            for (String key : prop.stringPropertyNames()) {
+                validCredentials.put(key, prop.getProperty(key));
+            }
+        } catch (IOException ex) {
+            ex.printStackTrace();
+        }
+    }
 
     @Override
     public void start(Stage primaryStage) {
 
         // Dodaj predefiniowane loginy i hasła
-        validCredentials.put("x", "x");
-        validCredentials.put("Ewa", "kot2312");
-        validCredentials.put("Monika", "banan112");
-        validCredentials.put("Edyta", "Serek0595");
+        loadCredentialsFromFile();
 
         // Sprawdź, czy minęły dwa tygodnie od ostatniego czyszczenia logów
         checkAndCleanLogs();
